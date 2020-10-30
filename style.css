@@ -180,7 +180,6 @@ ul {
   width: 100%;
   top: 20px;
   width: 30px;
-  background: #df42b1;
   height: 30px;
   line-height: 30px; }
 
@@ -190,7 +189,7 @@ img.mfp-img {
 
 button.mfp-close,
 button.mfp-arrow {
-  background: #df42b1; }
+ }
 
 .mfp-bottom-bar {
   display: none !important; }
@@ -1365,6 +1364,112 @@ input:required {
             .about-us-countdown-area .countdown-up-area .countdown-timer #clock div span {
               font-size: 12px; } }
 
+/* Gallery CSS*/
+
+  .mfp-with-zoom .mfp-container,
+
+  .mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+.gallery-bg {
+    background: url(../img/home/gallery-bg.png) left center no-repeat;
+    background-size: cover
+    }
+
+.gallery-area .img-gal {
+    display: block
+    }
+
+.gallery-area .single-imgs {
+    position: relative;
+    overflow: hidden
+    }
+
+.gallery-area .single-imgs .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(1,1,14,0.4);
+    transform: translateY(60px);
+    opacity: 0;
+    z-index: -1;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s
+    }
+
+.gallery-area .single-imgs .overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+    }
+
+.gallery-area .single-imgs .overlay-icon {
+    width: 60px;
+    height: 60px;
+    display: block;
+    border-radius: 50%;
+    background: rgba(234,7,99,0.8);
+    text-align: center
+    }
+
+.gallery-area .single-imgs .overlay-icon i,.gallery-area .single-imgs .overlay-icon span {
+    font-size: 20px;
+    color: #fff;
+    line-height: 60px
+    }
+
+.gallery-area .single-imgs:hover .overlay {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 1
+    }
+
 /* :: 12.0 Speaker Area CSS */
 .our-speaker-area {
   position: relative;
@@ -1405,7 +1510,7 @@ input:required {
     top: -180px;
     right: 0;
     z-index: 22;
-    background-color: #df42b1;
+
     padding: 15px;
     border-radius: 0 10px 0 10px;
     text-align: center;
@@ -1431,7 +1536,7 @@ input:required {
       letter-spacing: 1px;
       margin-bottom: 10px; }
     .single-speaker-area .speaker-info p {
-      color: #df42b1;
+
       margin-bottom: 0;
       letter-spacing: 1px;
       line-height: 1; }
