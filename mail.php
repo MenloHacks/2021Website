@@ -50,16 +50,16 @@
         // More headers
         if(mail($to,$subject,$message,$headers)){
             // Message if mail has been sent
-            echo "<script> alert('Your message has been sent! Thanks!');";
-            echo 'window.location= "../contact.html"';
+            echo "<script>";
+            echo 'window.location= "../contact.html?myparm=alertMe";';
             echo "</script>";
         }
 
         else{
             // Message if mail has been not sent
-            echo "<script>
-                    alert('There was a problem with sending that e-mail, please try again later!');
-                </script>";
+            echo "<script>";
+            echo 'window.location= "../contact.html?myparm=alertMe";';
+            echo "</script>";
         }
     }
 

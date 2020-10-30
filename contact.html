@@ -19,14 +19,13 @@
 
 </head>
 
-<body>
+<body onload="bodyLoad();">
     <!-- Preloader -->
     <div id="preloader">
         <div class="loader"></div>
     </div>
     <!-- /Preloader -->
 
-    <!-- Header Area Start -->
     <header class="header-area">
         <div class="classy-nav-container breakpoint-off">
             <div class="container">
@@ -43,14 +42,13 @@
 
                     <!-- Menu -->
                     <div class="classy-menu">
-                        <!-- Menu Close Button -->
-                        <div class="classycloseIcon">
-                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                        </div>
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul id="nav">
-                                <li><a href="index.html">Home</a></li>
+                                <li class="active"><a href="index.html">Home</a></li>
+                                <li><a href = "index.html#about">About</a></li>
+                                <li><a href = "index.html#schedule">Schedule</a></li>
+                                <li><a href = "index.html#sponsor">Sponsors</a></li>
                                 <!-- <li><a href="#">Hackathon</a>
                                     <ul class="dropdown">
                                         <li><a href="speakers.html">- Judges</a></li>
@@ -58,7 +56,7 @@
                                     </ul>
                                 </li>-->
                                 <!--<li><a href="sponsor.html">Sponsor Us</a></li> -->
-                                <li class = "active"><a href="contact.html">Contact Us</a></li>
+                                <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>
                         <!-- Nav End -->
@@ -312,5 +310,25 @@
     <script src="js/default-assets/active.js"></script>
 
 </body>
+<script type="text/javascript">
 
+function bodyLoad()
+{
+  parmValue = getParameterByName("myparm");
+  if(parmValue == 'alertMe')
+  {
+    alert('Your message has been sent! Thanks!');
+  }
+  if(parmValue == 'errorAlert')
+  {
+    alert('There was an error - please try again later!');
+  }
+}
+
+function getParameterByName(name) {
+    var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+
+</script>
 </html>
