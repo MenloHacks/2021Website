@@ -51,14 +51,14 @@
         if(mail($to,$subject,$message,$headers)){
             // Message if mail has been sent
             echo "<script>";
-            echo 'window.location= "../contact.html?myparm=alertMe";';
+            echo 'window.location= "../contact.html?message=sent";';
             echo "</script>";
         }
 
         else{
             // Message if mail has been not sent
             echo "<script>";
-            echo 'window.location= "../contact.html?myparm=errorAlert";';
+            echo 'window.location= "../contact.html?message=error";';
             echo "</script>";
         }
     }

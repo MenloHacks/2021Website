@@ -104,8 +104,8 @@
                     <div class="contact_from_area mb-100 clearfix">
                         <!-- Contact Heading -->
                         <div class="contact-heading">
-                            <h4>Let's Keep in Touch</h4>
-                            <p>If you have any questions about the hackathon or would like to sponsor us (or maybe a quick hi), please fill out the form below.</p>
+                            <h4 id = "FormConfirm">Let's Keep in Touch</h4>
+                            <p id = "FormDescription">If you have any questions about the hackathon or would like to sponsor us (or maybe a quick hi), please fill out the form below.</p>
                         </div>
                         <div class="contact_form">
                             <form role = "form" action="mail.php" method="post">
@@ -143,7 +143,7 @@
                                         </div>
                                         <!-- Button -->
                                         <div class="col-12">
-                                            <button name="submit" type="submit" class="btn confer-btn">Send Message <i class="zmdi zmdi-long-arrow-right"></i></button>
+                                            <button name="submit" type="submit" id='confirm' class="btn confer-btn">Send Message <i class="zmdi zmdi-long-arrow-right"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -314,14 +314,18 @@
 
 function bodyLoad()
 {
-  parmValue = getParameterByName("myparm");
-  if(parmValue == 'alertMe')
+  parmValue = getParameterByName("message");
+  if(parmValue == 'sent')
   {
-    alert('Your message has been sent! Thanks!');
+    document.getElementById('confirm').innerHTML = "Message sent! ";
+    document.getElementById('FormConfirm').innerHTML = "Thanks for reaching out!";
+    document.getElementById('FormDescription').innerHTML = "Your message has successfully been sent. We'll be in touch soon!";
   }
-  if(parmValue == 'errorAlert')
+  if(parmValue == 'error')
   {
-    alert('There was an error - please try again later!');
+    document.getElementById('confirm').innerHTML = "Submit Again";
+    document.getElementById('FormConfirm').innerHTML = "There was an error sending your message";
+    document.getElementById('FormDescription').innerHTML = "Your message could not be sent. Please try again.";
   }
 }
 
