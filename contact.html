@@ -80,6 +80,7 @@
                                 <li class="breadcrumb-item active" aria-current="page">Contact</li>
                             </ol>
                         </nav>
+                        <h3 id = "formConfirm"><h3>
                     </div>
                 </div>
             </div>
@@ -318,14 +319,12 @@ function bodyLoad()
   if(parmValue == 'sent')
   {
     document.getElementById('confirm').innerHTML = "Message sent! ";
-    document.getElementById('FormConfirm').innerHTML = "Thanks for reaching out!";
-    document.getElementById('FormDescription').innerHTML = "Your message has successfully been sent. We'll be in touch soon!";
+    document.getElementById('formConfirm').innerHTML = "Message Sent! Thanks for reaching out!";
   }
   if(parmValue == 'error')
   {
     document.getElementById('confirm').innerHTML = "Submit Again";
-    document.getElementById('FormConfirm').innerHTML = "There was an error sending your message";
-    document.getElementById('FormDescription').innerHTML = "Your message could not be sent. Please try again.";
+    document.getElementById('formConfirm').innerHTML = "Message error! Please try again!";
   }
 }
 
