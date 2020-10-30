@@ -6,6 +6,12 @@ Version: 1.0.0
 Last Update: March 14, 2019
 ----------------------------------------------------- */
 
+/* ------------------------------------------------------
+Project: MenloHacks2021 Official Website
+Authors: mitsukakiyohara, Sam0fc, RubixQber, MarvinMok
+Description: Website for the MenloHacks2021 hackathon.
+--------------------------------------------------- */
+
 /* --------------------------------
 To start 'Gulp' => npm run start
 -------------------------------- */
