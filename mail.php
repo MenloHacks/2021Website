@@ -58,7 +58,7 @@
         else{
             // Message if mail has been not sent
             echo "<script>";
-            echo 'window.location= "../contact.html?myparm=alertMe";';
+            echo 'window.location= "../contact.html?myparm=errorAlert";';
             echo "</script>";
         }
     }
