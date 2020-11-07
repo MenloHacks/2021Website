@@ -2654,9 +2654,14 @@ input:required {
   background-color: #708090; } /*#23272a*/
 
 .our-sponsor-area {
+  display:flex;
   position: relative;
   z-index: 1;
-  width: 100%; }
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+ }
+
   .our-sponsor-area .single-sponsor {
     border: 2px solid #7289da;
     padding-left: 20px;
