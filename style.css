@@ -2655,9 +2655,14 @@ input:required {
   background-color: #708090; } /*#23272a*/
 
 .our-sponsor-area {
+  display:flex;
   position: relative;
   z-index: 1;
-  width: 100%; }
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+ }
+
   .our-sponsor-area .single-sponsor {
     border: 2px solid #7289da;
     padding-left: 20px;
@@ -2853,5 +2858,129 @@ input:required {
         margin-bottom: 0; }
       .call-to-action-content .event-time p i {
         margin-right: 3px; }
+
+/* :: 22.0 FAQ Area CSS */
+.our-faq-area {
+  position: relative;
+  z-index: 1;
+  background-color: #483d8b; }
+  .our-faq-area .faq-tab {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px; }
+
+
+.single-faq-area {
+  padding: 10px;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  margin-bottom: 10px; }
+  .single-faq-area:hover, .single-faq-area:focus {
+    border-color: #df42b1; }
+  .single-faq-area .single-faq-tumb-info {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 42%;
+    flex: 0 0 42%;
+    max-width: 42%;
+    width: 42%;
+    padding-right: 15px; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .single-faq-area .single-faq-tumb-info {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 35%;
+        flex: 0 0 35%;
+        max-width: 35%;
+        width: 35%; } }
+    @media only screen and (max-width: 767px) {
+      .single-faq-area .single-faq-tumb-info {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+        padding-left: 0;
+        padding-bottom: 30px; } }
+    .single-faq-area .single-faq-tumb-info .single-faq-tumb {
+      height: 90px;
+      width: 90px; }
+      .single-faq-area .single-faq-tumb-info .single-faq-tumb img {
+        border-radius: 50%; }
+    .single-faq-area .single-faq-tumb-info .single-faq-info {
+      margin-left: 30px; }
+      .single-faq-area .single-faq-tumb-info .single-faq-info h6 {
+        font-size: 20px;
+        color: #ffffff;
+        font-weight: 600; }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+          .single-faq-area .single-faq-tumb-info .single-faq-info h6 {
+            font-size: 16px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .single-faq-area .single-faq-tumb-info .single-faq-info h6 {
+            font-size: 14px; } }
+        @media only screen and (max-width: 767px) {
+          .single-faq-area .single-faq-tumb-info .single-faq-info h6 {
+            font-size: 14px; } }
+      .single-faq-area .single-faq-tumb-info .single-faq-info p {
+        color: #9293bc;
+        margin-bottom: 0; }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+          .single-faq-area .single-faq-tumb-info .single-faq-info p {
+            font-size: 12px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .single-faq-area .single-faq-tumb-info .single-faq-info p {
+            font-size: 12px; } }
+        @media only screen and (max-width: 767px) {
+          .single-faq-area .single-faq-tumb-info .single-faq-info p {
+            font-size: 12px; } }
+        .single-faq-area .single-faq-tumb-info .single-faq-info p span {
+          color: #ffffff; }
+
+  .single-faq-area .collapsible{
+    background-color: #262970;
+    cursor: pointer;
+    padding: 23px;
+    padding-bottom: 12px;
+    width: 100%;
+    border: 1px solid #444675;
+    border-radius: 10px;
+    text-align: left; }
+  .single-faq-area .collapsible h6 {
+    font-size: 20px;
+    color: #ffffff; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .single-faq-area .single-faq-tumb-info .single-faq-info h6 {
+        font-size: 16px; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .single-faq-area .single-faq-tumb-info .single-faq-info h6 {
+        font-size: 14px; } }
+    @media only screen and (max-width: 767px) {
+      .single-faq-area .single-faq-tumb-info .single-faq-info h6 {
+        font-size: 14px; } }
+  .single-faq-area .collapsible .active, .collapsible:hover {
+    border-color: #df42b1;
+    color: #df42b1; }
+
+  .single-faq-area .content{
+    padding: 0 18px;
+    background-color: #483d8b;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .single-faq-area .content p {
+    color: #ccc;
+    margin-bottom: 0; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .single-faq-area .single-faq-tumb-info .single-faq-info p {
+        font-size: 12px; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .single-faq-area .single-faq-tumb-info .single-faq-info p {
+        font-size: 12px; } }
+    @media only screen and (max-width: 767px) {
+      .single-faq-area .single-faq-tumb-info .single-faq-info p {
+        font-size: 12px; } }
+    .single-faq-area .single-faq-tumb-info .single-faq-info p span {
+      color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */
