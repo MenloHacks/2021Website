@@ -84,7 +84,7 @@ li {
 
 p {
   line-height: 1.8;
-  color: #5d5e8d;
+  color: #BA55D3;
   font-size: 16px;
   font-weight: 400; }
 
@@ -1494,6 +1494,7 @@ input:required {
   z-index: 1;
   overflow: hidden;
   margin-bottom: 40px;
+  height: 400px;
   border-radius: 10px; }
   .single-speaker-area .speaker-single-thumb {
     position: relative;
