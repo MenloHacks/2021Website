@@ -2869,6 +2869,25 @@ input:required {
     z-index: 1;
     margin-bottom: 10px; }
 
+.mlh-code{
+  background-color:#483d8b;
+  text-align: center;
+  padding:30px;
+  height:30vh;
+}
+
+.mlh-code a:hover{
+  color:white;
+}
+.mlh-code h3{
+  color:white;
+}
+.logomlh{
+  width:20vw;
+  border:10px;
+  margin-left:-70vw;
+  margin-bottom: -15vh;
+}
 
 .single-faq-area {
   padding: 10px;
