@@ -31,11 +31,13 @@
     overflow: hidden;
     margin-bottom: 40px;
     border-radius: 10px;
+    height: 350px;
 
     .speaker-single-thumb {
         position: relative;
         z-index: 1;
         border-radius: 10px;
+        height: 350px;
 
         img {
             @include transition-duration(1500ms);
