@@ -2225,6 +2225,52 @@ input:required {
     font-size: 14px;
     color: #9293bc; }
 
+
+
+.prize-name{
+    color: #7d5ba6 !important;
+    width: 50%;
+}
+
+.col-wrapper
+{
+    height: 300px;
+    color: #7d5ba6;
+
+}
+
+
+@media screen and (min-width: 340px) {
+    .prize-item p {
+        display: inline-block;
+    }
+}
+
+
+@media screen and (max-width: 340px) {
+    .prize-item {
+        margin: auto;
+    }
+}
+
+.prize-item {
+    text-align: center;
+    margin-top: 0.5em;
+    margin: auto;
+
+}
+
+
+.winnings {
+    text-align: left;
+    color: white;
+    width:33%;
+
+   
+}
+
+
+
 /* 16.0 Client Area CSS */
 .our-client-area {
   position: relative;
