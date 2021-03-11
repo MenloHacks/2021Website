@@ -9,6 +9,9 @@
 	font-style: normal;
 }
 
+a.hiddentext{
+	color:rgb(17, 19, 67) !important;
+}
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
 	font-family: 'ElegantIcons';
